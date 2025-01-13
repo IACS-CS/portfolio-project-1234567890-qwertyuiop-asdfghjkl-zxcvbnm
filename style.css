@@ -1,29 +1,52 @@
+.stuff{
+  width:300px;
+  height:200px;
+  background-color:#FFFFFF;
+  padding:20px;
+  margin-top:10vh;
+}
+
+a {
+  style:none
+}
+/* https://www.w3schools.com/howto/howto_css_shake_image.asp */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) }
+  10% { transform: translate(-1px, -2px)}
+  20% { transform: translate(-3px, 0px)}
+  30% { transform: translate(3px, 2px)}
+  40% { transform: translate(1px, -1px)}
+  50% { transform: translate(-1px, 2px)}
+  60% { transform: translate(-3px, 1px)}
+  70% { transform: translate(3px, 1px)}
+  80% { transform: translate(-1px, -1px)}
+  90% { transform: translate(1px, 2px)}
+  100% { transform: translate(1px, -2px)}
+}
+
+
+
 #road {
-  fill: rgba(0, 0, 0, 0);
+  fill: rgb(0, 255, 102);
   background: rgb(12, 1, 1);
   width:100vw;
-  height:20vh;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 #path, #horizon {
   stroke: #FFFFFF;
   width:100vw;
-  height:20vh;
+  
 }
 .road {
-  background:#40365c;
+  background-image:url(agag.png);
   height:100vh;
   display:flex;
   flex-direction:column;
-  justify-content:end;
+  justify-content:space-between;
+  align-items:center;
+}
 
-}
-.bottomborder {
-  background:black;
-  height:5vh;
-  width:100vw;
-  bottom:-5vh;
-  z-index:1
-}
 .borderl {
   position:absolute;
   display: flex;
