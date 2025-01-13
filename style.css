@@ -39,12 +39,13 @@ a {
   
 }
 .road {
-  background-image:url(agag.png);
+  background:#40365c;
   height:100vh;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   align-items:center;
+
 }
 
 .borderl {
